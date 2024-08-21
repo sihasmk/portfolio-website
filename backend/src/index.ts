@@ -12,7 +12,7 @@ import { Service } from "./models/serviceModel";
 import { Testimonial } from "./models/testimonialModel";
 
 const app = express();
-const port = 3000;
+const port = 3100;
 app.use(json());
 app.use(cors());
 

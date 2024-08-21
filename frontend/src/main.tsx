@@ -7,6 +7,7 @@ import AddTestimonial from "./pages/AddTestimonial.tsx";
 import About from "./pages/About/About.tsx";
 import Resume from "./pages/Resume/Resume.tsx";
 import Portfolio from "./pages/Portfolio/Portfolio.tsx";
+import Contact from "./pages/Contact/Contact.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "portfolio",
         element: <Portfolio />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

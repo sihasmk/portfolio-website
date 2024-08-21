@@ -20,8 +20,8 @@ interface ITestimonialFromDb {
   organization: String;
 }
 
-const serviceUrl = "http://localhost:3000/services";
-const testimonialUrl = "http://localhost:3000/testimonials";
+const serviceUrl = "http://localhost:3100/services";
+const testimonialUrl = "http://localhost:3100/testimonials";
 
 const About = () => {
   const [servicesLoading, setServicesLoading] = useState<boolean>(true);

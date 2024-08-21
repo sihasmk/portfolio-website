@@ -70,12 +70,33 @@ const Resume = () => {
             ]}
           />
           <TimelineItem
+            heading="Veggify Recipe Blog App"
+            subheading="React.ts, Node.ts, MongoDB, Express.js, Axios, Vercel"
+            date="June 2024-July 2024"
+            description=""
+            bullets={[
+              "Created a food recipe blog template website to display recipes from a MongoDB database",
+              "Enabled filtering capabilities by type (Starters, Main Course etc) and search",
+            ]}
+          />
+          <TimelineItem
+            heading="Bookstore App"
+            subheading="React.ts, Node.ts, MongoDB, Express.js, Axios, Vercel"
+            date="May 2024-June 2024"
+            description=""
+            bullets={[
+              "Created a bookstore website with register and login functionalities to fetch and display books from a MongoDB database",
+              "Enabled filtering capabilities by name and author through a Search feature",
+              "Used Axios to make HTTP requests from Node.js",
+            ]}
+          />
+          <TimelineItem
             heading="Vidly"
             subheading="React.js, Node.js, MongoDB, Bootstrap, Heroku, Axios"
             date="Jan 2024-Feb 2024"
             description=""
             bullets={[
-              "Created a sample website with Register and Login functionalities to fetch and display movies from a MongoDB JSON document database",
+              "Created a sample website with register and login functionalities to fetch and display movies from a MongoDB JSON document database",
               "Used Axios to make HTTP requests from Node.js",
               "Successfully deployed the web app using Heroku",
             ]}

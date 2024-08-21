@@ -1,9 +1,8 @@
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import { FormEvent, useState } from "react";
 import { FaPhone } from "react-icons/fa6";
-import { convertToBase64 } from "../functions/convertToBase64";
 import axios from "axios";
 
-const url = "http://localhost:3000/testimonials";
+const url = "http://localhost:3100/testimonials";
 
 interface ITestimonial {
   name: String;

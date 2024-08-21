@@ -1,5 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+
+import { Spinner } from "flowbite-react";
+
 import { FaRegEye } from "react-icons/fa6";
 
 enum Categories {
@@ -18,7 +21,7 @@ interface IProjectFromDb {
   imageUrlList: string[];
 }
 
-const projectURL = "http://localhost:3000/projects";
+const projectURL = "http://localhost:3100/projects";
 
 const Portfolio = () => {
   const [loading, setLoading] = useState<boolean>(true);
@@ -86,27 +89,34 @@ const Portfolio = () => {
 
       {/* Show project data */}
       <section>
-        <ul className="project-list">
-          {filteredProjects.map((project) => (
-            <li
-              key={project._id}
-              className="project-item active"
-              data-filter-item
-              data-category={project.category}
-            >
-              <a href="">
-                <figure className="project-img">
-                  <div className="project-item-icon-box">
-                    <FaRegEye />
-                  </div>
-                  <img src={project.thumbnailUrl} alt="" />
-                </figure>
-                <h3 className="project-title">{project.title}</h3>
-                <p className="project-category">{project.category}</p>
-              </a>
-            </li>
-          ))}
-        </ul>
+        {loading && (
+          <div className="text-center">
+            <Spinner />
+          </div>
+        )}
+        {!loading && (
+          <ul className="project-list">
+            {filteredProjects.map((project) => (
+              <li
+                key={project._id}
+                className="project-item active"
+                data-filter-item
+                data-category={project.category}
+              >
+                <a href="">
+                  <figure className="project-img">
+                    <div className="project-item-icon-box">
+                      <FaRegEye />
+                    </div>
+                    <img src={project.thumbnailUrl} alt="" />
+                  </figure>
+                  <h3 className="project-title">{project.title}</h3>
+                  <p className="project-category">{project.category}</p>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
     </section>
   );
