@@ -21,7 +21,7 @@ interface IProjectFromDb {
   imageUrlList: string[];
 }
 
-const projectURL = "http://localhost:3100/projects";
+const projectURL = "http://localhost:3167/projects";
 
 const Portfolio = () => {
   const [loading, setLoading] = useState<boolean>(true);

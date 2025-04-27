@@ -7,12 +7,9 @@ import cors from "cors";
 import testimonialRoutes from "./routes/testimonialRoutes";
 import serviceRoutes from "./routes/serviceRoutes";
 import projectRoutes from "./routes/projectRoutes";
-import { Project } from "./models/projectModel";
-import { Service } from "./models/serviceModel";
-import { Testimonial } from "./models/testimonialModel";
 
 const app = express();
-const port = 3100;
+const port = 3167;
 app.use(json());
 app.use(cors());
 
@@ -31,7 +28,7 @@ async function run() {
   try {
     // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
     await mongoose.connect(uri, clientOptions as mongoose.ConnectOptions);
-    await mongoose.connection.db.admin().command({ ping: 1 });
+    await mongoose.connection.db?.admin().command({ ping: 1 });
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );

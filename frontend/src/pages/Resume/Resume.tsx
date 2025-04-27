@@ -102,23 +102,23 @@ const Resume = () => {
             ]}
           />
           <TimelineItem
-            heading="Supply Chain Management System"
-            subheading="React.js, Node.js, MySQL, Bootstrap"
-            date="Dec 2024-Jan 2024"
-            description=""
-            bullets={[
-              "Project done for Database Management Systems module",
-              "Normalized the database to reduce redundancies",
-              "Optimized queries and DB to lower response time by implementing in such a way that requires less JOIN operations",
-            ]}
-          />
-          <TimelineItem
             heading="YouTube Clone"
             subheading="HTML, CSS, JavaScript"
             date="Oct 2023-Dec 2023"
             description=""
             bullets={[
               "Developed a clone of YouTube.com to improve fluency in HTML, CSS and Javascript",
+            ]}
+          />
+          <TimelineItem
+            heading="Supply Chain Management System"
+            subheading="React.js, Node.js, MySQL"
+            date="Sep 2023- Oct 2023"
+            description=""
+            bullets={[
+              "Project done for Database Management Systems module",
+              "Normalized the database to reduce redundancies",
+              "Optimized queries and DB to lower response time by implementing in such a way that requires less JOIN operations",
             ]}
           />
         </ol>
